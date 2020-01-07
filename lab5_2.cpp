@@ -1,6 +1,24 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
+string mixText(string text1,string text2){
+	int i=0;
+	string e="E",fullstring,T1,T2;
+	if(text1.size()!=text2.size()){
+		return e;
+	}
+	else{
+		while(i<text1.size())
+		{
+			 T1=text1[i];
+			 T2=text2[i];
+		     fullstring=fullstring+T1+T2;
+			 i++;
+		}
+		return fullstring;
+	}
+}
 
 
 
